@@ -11,12 +11,12 @@ $.context.SalesOrderHeader = {
 }
 var body = {
 
-	"SoldToParty":$.context.shipToParty,
-	"SalesOrderType":$.context.salesOrderType,
-	"TotalNetAmount":$.context.orderAmount.toString(),
-	"SalesOrganization":$.context.salesOrganisation,
-	"DistributionChannel":$.context.distributionChannel,
-	"OrganizationDivision":$.context.division,
+	"SoldToParty":$.context.salesOrderDetails.shipToParty,
+	"SalesOrderType":$.context.salesOrderDetails.salesOrderType,
+	"TotalNetAmount":$.context.salesOrderDetails.orderAmount.toString(),
+	"SalesOrganization":$.context.salesOrderDetails.salesOrganisation,
+	"DistributionChannel":$.context.salesOrderDetails.distributionChannel,
+	"OrganizationDivision":$.context.salesOrderDetails.division,
 
 
 
